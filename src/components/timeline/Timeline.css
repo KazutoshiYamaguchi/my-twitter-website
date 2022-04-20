@@ -1,0 +1,62 @@
+.timeline {
+  flex: 0.7;
+  border-right: 1px solid var(--twitter_background);
+  overflow-y: scroll;
+}
+@media screen and (max-width: 768px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+
+  .timeline {
+    flex: 1;
+  }
+}
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+.timeline__header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  border: 1px solid var(--twitter_background);
+  padding: 5px 20px;
+}
+.timeline__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter_background);
+  padding-right: 10px;
+}
+.tweetBox > form {
+  display: flex;
+  flex-direction: column;
+}
+.tweetBox__input {
+  padding: 20px;
+  display: flex;
+}
+.tweetBox__input > input {
+  flex: 1;
+  font-size: 20px;
+  margin-left: 20px;
+  border: none;
+}
+
+.tweetBox__imageInput {
+  margin-left: 20px;
+  border: none;
+}
+.tweetBox__tweetButton {
+  background-color: var(--twitter_color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  width: 130px !important;
+  height: 40px !important;
+  border-radius: 30px !important;
+  margin-top: 20px !important;
+  margin-left: auto !important;
+}
